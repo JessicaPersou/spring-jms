@@ -1,0 +1,14 @@
+spring:
+  jms:
+    listener:
+      auto-startup: true
+  cloud:
+    aws:
+      region:
+        static: us-east-1
+      stack:
+        auto: false
+  sqs:
+    endpoint: http://localhost:4566
+    queue-name: order-queue
+
